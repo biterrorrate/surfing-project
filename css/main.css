@@ -71,7 +71,7 @@ img {
 }
 
 .hero {
-  background: url("../../img/backgrounds/surfers.png") center center/100% 100% no-repeat rgb(0, 0, 0);
+  background: url("../img/backgrounds/surfers.png") center center/100% 100% no-repeat rgb(0, 0, 0);
   height: 100vh;
   min-height: 850px;
   color: #fff;
@@ -500,7 +500,7 @@ img {
 }
 
 .order-section {
-  background: url("../../img/backgrounds/order-section.png") center center/100% 100% no-repeat;
+  background: url("../img/backgrounds/order-section.png") center center/100% 100% no-repeat;
 }
 
 .radio {
