@@ -1,0 +1,30 @@
+.advantages {
+    display: flex; 
+}
+
+.advantages__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    &:last-child {
+        paddinf-right: 0px;
+        
+        &:before {
+            display: none;
+        }
+    }
+
+    &:first-child {
+        padding-left: 0px;
+    }
+
+    &:before {
+        content: url("../../img/decore/Shapes.png");
+        position: absolute;
+        top: 30px;
+        right: 0%;
+        transform: translate(50%);
+    }
+}
+

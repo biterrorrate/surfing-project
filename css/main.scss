@@ -1,0 +1,32 @@
+//sizes
+$ContWid: 940px;
+$baseFontSize: 18px;
+
+//colors
+$grey: #666666;
+$white: #fff;
+
+//z-index
+$z-fixed-menu: 100;
+
+//imports
+@import url(./normalize.css);
+@import "layout";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400');
+
+//components
+@import "./components/hero";
+@import "./components/header";   
+@import "./components/icons";   
+@import "./components/icon";    
+@import "./components/btn";     
+@import "./components/section";     
+@import "./components/headline";     
+@import "./components/advantages";     
+@import "./components/advantage";     
+@import "./components/reviews"; 
+@import "./components/interactive-avatar"; 
+@import "./components/form"; 
+@import "./components/order-section"; 
+@import "./components/radio"; 
+@import "./components/fixed-menu"; 

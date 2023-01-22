@@ -1,0 +1,25 @@
+.section {
+    height: 100vh;
+    min-height: 650px;
+    color: $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+    &--font-color--white {
+        color: white;
+
+        .section__title {
+            color: inherit;
+            margin-bottom: 55px;
+        }
+    }  
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}

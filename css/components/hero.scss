@@ -1,0 +1,31 @@
+.hero {
+    background: url("../../img/backgrounds/surfers.png") center center/100% 100% no-repeat rgba(0, 0, 0, 1.25);;
+    height: 100vh;
+    min-height: 850px;
+    color: #fff;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 28px 0px 65px;
+}
+
+.hero__title-section {
+    width: 51%;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.hero__title-description {
+    font-size: 21px;
+    margin-bottom: 39px;
+}

@@ -1,0 +1,14 @@
+.icon {
+    display: flex;
+    align-items: center;
+} 
+
+.icon__pic {
+    width: 35px;
+    margin-right: 14px;
+}
+
+.icon__description {
+    font-size: 16px;
+    max-width: 90px;
+}

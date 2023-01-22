@@ -1,0 +1,77 @@
+html, body {
+    height: 100%; /*установили для того, чтобы страница заняла всю высоту экрана (по умолчанию auto - то есть раст-ть по содерж-му)*/
+}
+
+body {
+    position: relative;/*для позиционирования эл-в относительно body*/
+    color: $grey; 
+    font-size: $baseFontSize;
+    line-height: 1.42;
+    font-family: 'Alegreya Sans', Helvetica;
+    background: $white;
+    -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $ContWid+20px;
+    min-height: 100%;
+    overflow: hidden;/*содержимое, не влезающее в блок, будет обрезано*/
+}
+
+.container {
+    margin: 0 auto;
+    width: $ContWid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;/*при наложении границ ячеек браузер будет считать две совмещённые границы как одну*/
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing:border-box;/*размер блока будет рассчитан с учётом толщины паддингов и границы*/
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
