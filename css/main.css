@@ -191,6 +191,8 @@ img {
 }
 
 .btn {
+  display: block;
+  width: 156px;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -359,6 +361,7 @@ img {
 .reviews__avatar {
   width: 253px;
   height: 264px;
+  margin-right: 40px;
 }
 
 .reviews__avatar-img {
@@ -372,7 +375,6 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 40px;
 }
 
 .reviews__title {
@@ -409,9 +411,13 @@ img {
   overflow: hidden;
   position: relative;
   margin-right: 6px;
+  border: 6px solid transparent;
 }
 .interactive-avatar:last-child {
   margin-right: 0px;
+}
+.interactive-avatar:hover {
+  border: 6px solid #FEDB3F;
 }
 .interactive-avatar--active {
   border: 6px solid #FEDB3F;

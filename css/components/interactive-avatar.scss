@@ -5,9 +5,14 @@
     overflow: hidden;
     position: relative;
     margin-right: 6px;
+    border: 6px solid transparent;
 
     &:last-child {
         margin-right: 0px;
+    }
+
+    &:hover {
+        border: 6px solid #FEDB3F;
     }
 
     &--active {
