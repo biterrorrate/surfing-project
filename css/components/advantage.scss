@@ -3,22 +3,22 @@
 }
 
 .advantage__image {
-    margin-bottom: 9px;
+    margin-bottom: 0.5625rem;
 }
 
 .advantage__image-wrapper {
     position: relative;
     display: inline-block;
-    width: 128px;
-    height: 128px;
+    width: 8rem;
+    height: 8rem;
     background-color: #F2F5F4;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .advantage__icon {
-    width: 68px;
-    height: 68px;
+    width: 4.25rem;
+    height: 4.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,10 +26,10 @@
 }
 
 .advantage__title {
-    font-size: 27px;
+    font-size: 1.6875;
     font-weight: bold;
     color: #000;
-    margin-bottom: 14px;
+    margin-bottom: 0.875;
 }
 
 .advantage__description {

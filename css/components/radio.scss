@@ -2,17 +2,17 @@
     display: flex;
     cursor: pointer;
     user-select: none;
-    margin-right: 14px;
-    margin-bottom: 20px;
+    margin-right: 0.875rem;
+    margin-bottom: 1.25rem;
 
     &:last-child {
         margin-right: 0;
     }
 
     &--checkbox {
-         margin-bottom: 50px;
+         margin-bottom: 3.125rem;
         .radio__visible {
-        border-radius: 0px;
+        border-radius: 0;
 
         &:before {
             background: url("../../img/decore/checked.svg") center center/100% 100% no-repeat;
@@ -32,18 +32,18 @@
 }
 
 .radio__visible {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     position: relative;
     border-radius: 50%;
     background: #fff;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 
     &:before {
         content: "";
         display: none;
-        width: 13px;
-        height: 13px;
+        width: 0.8125rem;
+        height: 0.8125rem;
         background: #FEDB3F;
         border-radius: 50%;
         position: absolute;

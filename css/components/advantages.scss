@@ -8,7 +8,7 @@
     position: relative;
 
     &:last-child {
-        paddinf-right: 0px;
+        padding-right: 0;
         
         &:before {
             display: none;
@@ -16,13 +16,13 @@
     }
 
     &:first-child {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     &:before {
         content: url("../../img/decore/Shapes.png");
         position: absolute;
-        top: 30px;
+        top: 1.875rem;
         right: 0%;
         transform: translate(50%);
     }
