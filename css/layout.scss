@@ -1,5 +1,13 @@
 html {
-    font-size: 16px;
+    font-size: $baseFontSize;
+
+    // @include tablet {
+    //     font-size: $baseFontSize - 1px;
+    // }
+
+    // @include phone {
+    //     font-size: $baseFontSize - 2px;
+    // }
 }
 
 html, body {
@@ -9,7 +17,6 @@ html, body {
 body {
     position: relative;/*для позиционирования эл-в относительно body*/
     color: $grey; 
-    font-size: $baseFontSize;
     line-height: 1.42;
     font-family: 'Alegreya Sans', Helvetica;
     background: $white;
@@ -20,14 +27,16 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $ContWid+1.25rem;
+    //min-width: $ContWid+rem(20px);
     min-height: 100%;
     overflow: hidden;/*содержимое, не влезающее в блок, будет обрезано*/
 }
 
 .container {
     margin: 0 auto;
-    width: $ContWid;
+    //width: $ContWid;
+    width: 97%;
+    max-width: $ContWid; 
 }
 
 h1, h2, h3, h4, h5, h6 {

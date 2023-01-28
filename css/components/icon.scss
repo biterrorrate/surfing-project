@@ -4,11 +4,13 @@
 } 
 
 .icon__pic {
-    width: 2.185rem;
-    margin-right: 0.875rem;
-}
+    width: rem(35px);
+    height: rem(35px);
+    fill: white;
+    margin-right: rem(14px);
+} 
 
 .icon__description {
-    font-size: 1rem;
-    max-width: 5.625rem;
-}
+    font-size: rem(16px);
+    max-width: rem(90px);
+}  

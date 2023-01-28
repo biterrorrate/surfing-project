@@ -1,0 +1,7 @@
+.section__map {
+    position: relative;
+    height: 100vh;
+    min-height: rem(850px);
+    background: url("../img/backgrounds/map.png") center center /100% 100% no-repeat;
+    z-index: 0;
+}

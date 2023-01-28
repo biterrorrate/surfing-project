@@ -1,31 +1,76 @@
 .hero {
-    background: url("../img/backgrounds/surfers.png") center center/100% 100% no-repeat rgba(0, 0, 0, 1.25);;
+    background: url("../img/backgrounds/surfers.png") center center /100% 100% no-repeat rgba(0, 0, 0, 1.25);
     height: 100vh;
-    min-height: 40.652rem;
+    min-height: rem(850px);
     color: #fff;
-}
+    position: relative;
+    z-index: 0;
+
+     @include tablet {
+         background: url("../img/backgrounds/surfers_tablet.png") center top 91px /100% 100% no-repeat rgba(0, 0, 0, 1.25);
+
+         &:after {
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             display: block;
+             width: rem(768px);
+             height: rem(91px);
+             background-color: #1968B1;
+             z-index: -1;
+         }
+     }
+     
+     @include phone {
+        background: url("../img/backgrounds/surfers_phone.png") center top 91px /100% 100% no-repeat rgba(0, 0, 0, 1.25);
+     }
+
+
+} 
 
 .hero__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 1.75rem 0 4.0625rem;
+    padding: rem(28px) 0 rem(65px);
 }
 
 .hero__title-section {
     width: 51%;
+
+    @include tablet {
+        width: 102%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 } 
 
 .hero__main-title {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: rem(48px);
+    line-height: 1.2; 
     font-weight: bold;
-    margin-bottom: 1.0625rem;
+    margin-bottom: rem(19px);
     text-transform: uppercase;
+    letter-spacing: 0.8px;
+
+     @include phone {
+         font-size: rem(40px);
+         line-height: 0.9; 
+     }   
 }
 
 .hero__title-description {
-    font-size: 1.3125rem;
-    margin-bottom: 2.4375rem;
+    font-size: rem(21px);
+    margin-bottom: rem(36px);
+
+    @include phone {
+        font-size: rem(18px);
+    }   
 }

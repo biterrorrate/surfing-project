@@ -1,3 +1,11 @@
 .order-section {
-    background: url("../img/backgrounds/order-section.png") center center/100% 100% no-repeat;
+    background: url("../img/backgrounds/order-section.png") center center/ 100% 100% no-repeat;
+
+    @include tablet {
+        background: url("../img/backgrounds/order-section__tablet.png") center center/ 100% 100% no-repeat;
+    }
+
+    @include phone {
+        background: url("../img/backgrounds/order-section__phone.png") center center/ 100% 100% no-repeat;
+    }
 }

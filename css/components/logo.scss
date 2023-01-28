@@ -1,0 +1,9 @@
+.logo {
+    flex-shrink: 0;
+
+    &__pic {
+        fill: white;
+        width: rem(56px);
+        height: rem(40px);
+    }
+}

@@ -1,12 +1,28 @@
 .form {
     display: flex;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 17%;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 2%;
+    }
 }
 
 .form__column {
     flex: 1;
-    margin-right: 1.6875rem;
+    margin-right: rem(27px);
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablet {
         margin-right: 0;
     }
 }
@@ -17,37 +33,52 @@
 
 .form__block {
     flex: 1;
-    margin-right: 1.0625rem;
-    margin-bottom: 0.5rem;
+    margin-right: rem(17px);
+    margin-bottom: rem(8px);
 
     &:last-child {
         margin-right: 0;
     }
+
+    @include phone {
+        margin-right: rem(17px);
+    }
 }
 
 .form__input {
-    width: 100%; 
+    width: 100%;
     border: none;
-    padding: 1rem 4rem 1.25rem 0.75rem;
-    border: 0.1875rem solid transparent;
-    border-radius: 0.25rem;
+    padding: rem(16px) rem(64px) rem(20px) rem(12px);
+    border: rem(3px) solid transparent;
+    border-radius: rem(4px);
 
     &:focus {
-        border: 0.1875rem solid #FEDB3F;
+        border: rem(3px) solid #FEDB3F;
         outline: none;
     }
 
     &--textarea {
-        width: 28.125rem;
-        height: 9.5rem;
+        height: rem(152px);
         resize: none;
-        margin-bottom: 1.0625rem;
+        margin-bottom: rem(17px);
+    }
+
+    @include tablet {
+        height: rem(25px);
+
+        &--textarea {
+            height: rem(82px);
+        }
     }
 }
 
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+
+    @include phone {
+        justify-content: center;
+    }
 }
 
 .form__radio {
@@ -56,4 +87,8 @@
 
 .form__btns {
     display: flex;
+
+    @include tablet {
+        justify-content: center;
+    }
 }

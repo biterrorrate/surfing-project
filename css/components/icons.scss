@@ -1,9 +1,13 @@
 .icons {
     display: flex;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .icons__item {
-    margin-right: 2.125rem;
+    margin-right: rem(34px);
 
     &:last-child {
         margin-right: 0;

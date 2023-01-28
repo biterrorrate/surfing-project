@@ -3,13 +3,22 @@
 }
 
 .headline__title {
-    margin-bottom: 0.6875;
+    margin-bottom: rem(11px);
     text-transform: uppercase;
     color: #000;
+    letter-spacing: 0.8px;
 }
 
 .headline__description {
     padding: 0 27%;
-    margin-bottom: 3.125rem;
+    margin-bottom: rem(47px);
     line-height: 1.26;
+
+    @include tablet {
+        padding: 0 21%;
+    }
+
+    @include phone {
+        padding: 0 5%;
+    }
 }

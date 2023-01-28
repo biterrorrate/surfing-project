@@ -1,11 +1,23 @@
 .advantages {
     display: flex; 
+
+    @include phone {
+        display: block;
+    }
 }
 
 .advantages__item {
-    flex: 1;
+    flex: 1; 
     padding: 0 3%;
     position: relative;
+
+    // &:before {
+    //     content: url("../img/decore/Shapes.png");
+    //     position: absolute;
+    //     top: rem(30px);
+    //     right: 0%;
+    //     transform: translate(50%);
+    // }
 
     &:last-child {
         padding-right: 0;
@@ -19,12 +31,26 @@
         padding-left: 0;
     }
 
-    &:before {
-        content: url("../../img/decore/Shapes.png");
-        position: absolute;
-        top: 1.875rem;
-        right: 0%;
-        transform: translate(50%);
+
+    @include tablet {
+        padding: 0 2%;
+
+        &:before {
+            display: none;
+        }
     }
+
+    @include phone {
+        padding-left: 1%;
+
+        &:first-child {
+            padding-left: 1%;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
 }
 
