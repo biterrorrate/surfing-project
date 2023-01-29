@@ -1,5 +1,5 @@
 .hero {
-    background: url("../img/backgrounds/surfers.png") center center /100% 100% no-repeat rgba(0, 0, 0, 1.25);
+    background: url("../img/backgrounds/surfers.png") center center /cover no-repeat rgba(0, 0, 0, 1.25);
     height: 100vh;
     min-height: rem(850px);
     color: #fff;
@@ -7,7 +7,7 @@
     z-index: 0;
 
      @include tablet {
-         background: url("../img/backgrounds/surfers_tablet.png") center top 91px /100% 100% no-repeat rgba(0, 0, 0, 1.25);
+         background: url("../img/backgrounds/surfers_tablet.png") center top 91px /cover no-repeat rgba(0, 0, 0, 1.25);
 
          &:after {
              content: "";
@@ -15,7 +15,7 @@
              top: 0;
              left: 0;
              display: block;
-             width: rem(768px);
+             width: 100vw;
              height: rem(91px);
              background-color: #1968B1;
              z-index: -1;
@@ -23,7 +23,7 @@
      }
      
      @include phone {
-        background: url("../img/backgrounds/surfers_phone.png") center top 91px /100% 100% no-repeat rgba(0, 0, 0, 1.25);
+        background: url("../img/backgrounds/surfers_phone.png") center top 91px /cover no-repeat rgba(0, 0, 0, 1.25);
      }
 
 

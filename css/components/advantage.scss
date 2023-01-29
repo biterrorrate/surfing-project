@@ -10,10 +10,10 @@
 
 .advantage__image {
     margin-bottom: rem(11px);
-    //margin-right: rem(12px);
 
     @include phone {
         margin-bottom: rem(25px);
+        margin-right: rem(12px);
     }
 }
 

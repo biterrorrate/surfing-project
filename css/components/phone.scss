@@ -1,5 +1,6 @@
 .phone {
     font-size: rem(22px);
+    font-weight: bold;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -8,6 +9,9 @@
 
     &__text {
         line-height: 1;
+        &--footer {
+            font-weight: normal;
+        }
     }
 }
 
@@ -17,13 +21,13 @@
 
 .phone__icon {
 
-    &-footer {
+    &--footer {
         width: rem(13px);
         height: rem(15px);
         fill: black;
     }
 
-    &-header {
+    &--header {
         width: rem(13px);
         height: rem(15px);
         fill: white;
