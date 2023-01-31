@@ -11,10 +11,15 @@
 .advantage__image {
     margin-bottom: rem(11px);
 
+    @include tablet {
+        margin-bottom: rem(15px);
+    }
+
     @include phone {
         margin-bottom: rem(25px);
         margin-right: rem(12px);
     }
+
 }
 
 .advantage__image-wrapper {
@@ -54,8 +59,8 @@
 
 .advantage__text {
     @include phone {
-        padding-top: rem(8px);
-        padding-right: rem(27px);
+        padding-left: rem(11px);
+        padding-right: rem(25px);
     }
 }
 
@@ -64,10 +69,14 @@
     font-weight: bold;
     color: #000;
     margin-bottom: rem(17px); 
-    letter-spacing: 0.4px;
+
+        @include tablet {
+        margin-bottom: rem(5px);
+    }
 } 
 
 .advantage__description {
+    font-size: 18px;
     width: 104%;
     line-height: 1.25;
 }

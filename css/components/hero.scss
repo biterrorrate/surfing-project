@@ -7,7 +7,7 @@
     z-index: 0;
 
      @include tablet {
-         background: url("../img/backgrounds/surfers_tablet.png") center top 91px /cover no-repeat rgba(0, 0, 0, 1.25);
+         background: url("../img/backgrounds/surfers_tablet.png") center top rem(91px) /cover no-repeat rgba(0, 0, 0, 1.25);
 
          &:after {
              content: "";
@@ -17,13 +17,13 @@
              display: block;
              width: 100vw;
              height: rem(91px);
-             background-color: #1968B1;
+             background-color: #1968B1;  
              z-index: -1;
          }
      }
      
      @include phone {
-        background: url("../img/backgrounds/surfers_phone.png") center top 91px /cover no-repeat rgba(0, 0, 0, 1.25);
+        background: url("../img/backgrounds/surfers_phone.png") center top rem(91px) /cover no-repeat rgba(0, 0, 0, 1.25);
      }
 
 
@@ -35,6 +35,10 @@
     justify-content: space-between;
     height: 100%;
     padding: rem(28px) 0 rem(65px);
+
+    @include tablet {
+        padding: rem(22px) 0 rem(65px);
+    }
 }
 
 .hero__title-section {
@@ -48,6 +52,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 0 rem(30px);
     }
 
 } 
@@ -58,12 +63,15 @@
     font-weight: bold;
     margin-bottom: rem(19px);
     text-transform: uppercase;
-    letter-spacing: 0.8px;
 
-     @include phone {
+    @include tablet {
+        font-size: rem(48px);
+    }
+
+    @include phone {
          font-size: rem(40px);
          line-height: 0.9; 
-     }   
+    }   
 }
 
 .hero__title-description {

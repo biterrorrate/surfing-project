@@ -6,7 +6,6 @@
     margin-bottom: rem(11px);
     text-transform: uppercase;
     color: #000;
-    letter-spacing: 0.8px;
 }
 
 .headline__description {
@@ -16,6 +15,7 @@
 
     @include tablet {
         padding: 0 21%;
+        margin-bottom: rem(58px);
     }
 
     @include phone {

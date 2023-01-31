@@ -1,7 +1,7 @@
 html {
     font-size: $baseFontSize;
 
-      @include tablet {
+@include tablet {
           font-size: $baseFontSize - 1px;
       }
 

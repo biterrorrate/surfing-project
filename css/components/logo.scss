@@ -5,5 +5,13 @@
         fill: white;
         width: rem(56px);
         height: rem(40px);
+
+        @include tablet {
+            margin-left: rem(18px);
+        }
+
+        @include phone {
+            margin-left: 0;
+        }
     }
 }

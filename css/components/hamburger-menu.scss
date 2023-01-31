@@ -5,9 +5,14 @@
     width: rem(26px);
     height: rem(24px);
     display: none;
+    margin-right: 25px;
 
     @include tablet {
         display: inline-flex;
+    }
+
+    @include phone {
+        margin-right: 0;
     }
 }
 

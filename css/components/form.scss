@@ -7,10 +7,10 @@
         padding: 0 17%;
     }
 
-    @include tablet {
+    @include phone {
         flex-direction: column;
         align-items: stretch;
-        padding: 0 2%;
+        padding: 0 0;
     }
 }
 
@@ -29,6 +29,11 @@
 
 .form__row {
     display: flex;
+
+    @include phone {
+       margin-bottom: rem(5px);
+    }
+
 }
 
 .form__block {
@@ -68,6 +73,12 @@
 
         &--textarea {
             height: rem(82px);
+        }
+    }
+
+    @include phone {
+        &--textarea {
+            height: rem(87px); ;
         }
     }
 }

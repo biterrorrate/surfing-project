@@ -1,5 +1,5 @@
 .nav {
-    margin: 0 rem(30px);
+    margin:2px rem(35px);
     padding-top: rem(5px);
     
     @include tablet {
@@ -21,7 +21,7 @@
 
 .nav__item {
     font-weight: bold;
-    margin-right: rem(25px);
+    margin-right: rem(22px);
     margin-bottom: rem(10px);
 
     &:last-child {
