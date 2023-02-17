@@ -477,7 +477,7 @@ img {
   position: relative;
 }
 .advantages__item:before {
-  content: url("../img/decore/Shapes.svg");
+  content: url("../img/decore/shapes.svg");
   position: absolute;
   top: 2.7777777778rem;
   right: 0%;
