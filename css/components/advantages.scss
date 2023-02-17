@@ -11,13 +11,13 @@
     padding: 0 3%;
     position: relative;
 
-    // &:before {
-    //     content: url("../img/decore/Shapes.png");
-    //     position: absolute;
-    //     top: rem(30px);
-    //     right: 0%;
-    //     transform: translate(50%);
-    // }
+     &:before {
+         content: url("../img/decore/Shapes.svg");
+         position: absolute;
+         top: rem(50px);
+         right: 0%;
+         transform: translate(50%);
+     }
 
     &:last-child {
         padding-right: 0;

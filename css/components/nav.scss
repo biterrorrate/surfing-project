@@ -1,11 +1,10 @@
 .nav {
-    margin:2px rem(35px);
-    padding-top: rem(5px);
+    margin-top: rem(7px);
     
     @include tablet {
         display: none;
     }
-}
+} 
 
 .nav__list {
     display: flex;

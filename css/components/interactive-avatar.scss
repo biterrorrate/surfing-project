@@ -6,6 +6,7 @@
     position: relative;
     margin-right: rem(6px);
     border: rem(6px) solid transparent;
+    transition: border-color 0.3s;
 
     &:last-child {
         margin-right: 0;

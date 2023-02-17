@@ -29,11 +29,6 @@
 
 .form__row {
     display: flex;
-
-    @include phone {
-       margin-bottom: rem(5px);
-    }
-
 }
 
 .form__block {
@@ -47,6 +42,7 @@
 
     @include phone {
         margin-right: rem(17px);
+        margin-bottom: rem(13px);
     }
 }
 

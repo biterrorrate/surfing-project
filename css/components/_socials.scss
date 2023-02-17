@@ -25,6 +25,7 @@
     width: rem(20px);
     height: rem(20px);
     fill: #B3B3B3;
+    transition: fill 0.3s;
 
     &:hover {
         fill: #292929;
