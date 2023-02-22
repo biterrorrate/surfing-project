@@ -3,7 +3,7 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 const dropdownClose = document.querySelector('.dropdown__close');
 
 const parametrDropdown = document.querySelector('.parametr__dropdown');
-const parametrLink = document.querySelector('.parametr__link');
+const parametrLink = document.querySelector('.parametrs__link');
 
 
 
@@ -18,10 +18,4 @@ hamburgerMenu.addEventListener('click', e => {
 
 parametrLink.addEventListener('click', e => {
     e.preventDefault()
-    parametrDropdown.style.display = 'block';
-
-    if(!e.target == parametrLink) {
-        parametrDropdown.style.display = 'none';
-    }
-    console.log(e.target);
 })
