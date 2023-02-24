@@ -19,3 +19,23 @@ hamburgerMenu.addEventListener('click', e => {
 parametrLink.addEventListener('click', e => {
     e.preventDefault()
 })
+
+// $(document).ready(() => {
+ 
+//     $('.worker__polygone').on('click', e => {
+//         let elem = $(e.currentTarget).parent().siblings('.worker__description');
+//         elem.fadeToggle();
+//     });
+  
+//  }); 
+
+ $(document).ready(() => {
+
+    $('.worker__polygone').on('click', e =>{
+
+        let elem1 = $(e.currentTarget).parent().siblings('.worker__description');
+        elem1.toggleClass('worker__description--position--open');
+        console.log('Click');
+
+    })
+ })

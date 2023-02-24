@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <title>Главная</title>
 </head>
 <body>
@@ -259,6 +259,73 @@
                     </svg>
                 </a>
             </section>
+            <section class="section">
+                <div class="container">
+                    <h1 class="section__title team-section-title">команда</h1>
+                    <ul class="team">
+                        <li class="team__item worker">
+                            <div class="worker__avatar">
+                                <img src="./img/avatars/workers/dmitry.png" alt="" class="worker__avatar-png">
+                            </div>
+                            <div class="worker__headline">
+                                <h3 class="worker__title">Борис Федорович</h3>
+                                <svg class="worker__polygone">
+                                    <use xlink:href="./img/icons/socials/sprite.svg#polygone-down"></use>
+                                </svg>
+                            </div>
+                            <div class="worker__description">
+                                <div class="worker__description-title">Главный технолог</div>
+                                <div class="worker__description-text">Отвечает за материалы и разработку досок</div>
+                            </div>
+                        </li>
+                        <li class="team__item worker">
+                            <div class="worker__avatar">
+                                <img src="./img/avatars/workers/olga.png" alt="" class="worker__avatar-png">
+                            </div>
+                            <div class="worker__headline">
+                                <h3 class="worker__title">Ольга Невзорова</h3>
+                                <svg class="worker__polygone">
+                                    <use xlink:href="./img/icons/socials/sprite.svg#polygone-down"></use>
+                                </svg>
+                            </div>
+                            <div class="worker__description">
+                                <div class="worker__description-title">Дизайнер</div>
+                                <div class="worker__description-text">Создает дизайн серфбордов</div>
+                            </div>
+                        </li>
+                        <li class="team__item worker">
+                            <div class="worker__avatar">
+                                <img src="./img/avatars/workers/ingvar.png" alt="" class="worker__avatar-png">
+                            </div>
+                            <div class="worker__headline">
+                                <h3 class="worker__title">Ингвар Нильсон</h3>
+                                <svg class="worker__polygone">
+                                    <use xlink:href="./img/icons/socials/sprite.svg#polygone-down"></use>
+                                </svg>
+                            </div>
+                            <div class="worker__description">
+                                <div class="worker__description-title">Спортсмен</div>
+                                <div class="worker__description-text">Участвует в разработке серфбордов</div>
+                            </div>
+                        </li>
+                        <li class="team__item worker">
+                            <div class="worker__avatar">
+                                <img src="./img/avatars/workers/ekaterina.png" alt="" class="worker__avatar-png">
+                            </div>
+                            <div class="worker__headline">
+                                <h3 class="worker__title">Екатерина Иванова</h3>
+                                <svg class="worker__polygone">
+                                    <use xlink:href="./img/icons/socials/sprite.svg#polygone-down"></use>
+                                </svg>
+                            </div>
+                            <div class="worker__description">
+                                <div class="worker__description-title">Тестировщик</div>
+                                <div class="worker__description-text">Отвечает за разработку новых продуктов</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <!-- <section class="products">
                 <div class="container">
                     <div class="products__img">
@@ -293,7 +360,7 @@
                         <div class="reviews__display">
                             <div class="reviews__display-inner">
                                 <div class="reviews__avatar">
-                                    <img src="./img/avatars/women_brunette.png" alt="women brunette" class="review__avatar-img">
+                                    <img src="./img/avatars/customers/women_brunette.png" alt="women brunette" class="review__avatar-img">
                                 </div>
                                 <article class="reviews__content">
                                     <h4 class="reviews__title">Лучший дизайн</h4>
@@ -309,17 +376,17 @@
                         <ul class="reviews__nav">
                             <li class="reviews__nav-item interactive-avatar interactive-avatar--active">
                                 <a href="#" class="interactive-avatar__link">
-                                    <img src="./img/avatars/women_brunette.png" alt="avatar of brunette" class="interactive-avatar__pic">
+                                    <img src="./img/avatars/customers/women_brunette.png" alt="avatar of brunette" class="interactive-avatar__pic">
                                 </a>
                             </li>
                             <li class="reviews__nav-item interactive-avatar">
                                 <a href="" class="interactive-avatar__link">
-                                    <img src="./img/avatars/man_reviewer.png" alt="avatar of reviewer" class="interactive-avatar__pic">
+                                    <img src="./img/avatars/customers/man_reviewer.png" alt="avatar of reviewer" class="interactive-avatar__pic">
                                 </a>
                             </li>
                             <li class="reviews__nav-item interactive-avatar">
                                 <a href="" class="interactive-avatar__link">
-                                    <img src="./img/avatars/second_man_reviewer.jpg" alt="avatar second reviewer" class="interactive-avatar__pic">
+                                    <img src="./img/avatars/customers/second_man_reviewer.jpg" alt="avatar second reviewer" class="interactive-avatar__pic">
                                 </a>
                             </li>
                         </ul>
@@ -471,6 +538,7 @@
             <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
         </ul>
     </nav>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
     <script src="index.js"></script>
+</body>
 </html>
