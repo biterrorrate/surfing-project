@@ -4,5 +4,20 @@
 
 .team {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @include tablet {
+        display: none;
+        align-items: center;
+    }
+
+    &--version--mobile {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

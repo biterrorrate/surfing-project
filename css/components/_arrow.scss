@@ -1,33 +1,26 @@
 .arrow {
     position: absolute;
     top: 50%;
+    z-index: 100; 
 
-    @include tablet {
-        top: 30%;
-    }
-
-    &__left {
+    &__left { 
         left: 5%;
     }
 
     &__right {
         right: 5%;
-        }
+    }
 
-}
-.arrow__svg {
-    width: 15px;
-    height: 29px;
+    &__svg {
+    width: rem(15px);
+    height: rem(29px);
     stroke: black;
     stroke-width: 2;
     stroke-linecap: round;
     fill: none;
+    }
 
-     &__left {
-
-     }
-
-     &__right {
-
-     }
+    @include tablet {
+        top: 30%;
+    }
 }

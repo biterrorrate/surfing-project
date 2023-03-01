@@ -1,11 +1,10 @@
 .parametr {
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
     
     &:last-child {
         margin-bottom: 0;  
     }
-
     
     &__icon {
         position: relative;

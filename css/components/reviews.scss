@@ -6,6 +6,9 @@
     background: #F8FAF9;
     padding: rem(42px) rem(42px);
     margin-bottom: rem(12px);
+    position: absolute;
+    opacity: 0;
+    //transition: opacity 0.3s;
 }
 
 .reviews__display-inner {
@@ -72,4 +75,21 @@
 .reviews__nav {
     display: flex;
     justify-content: center;
+}
+
+.active {
+    opacity: 1;
+    position: static;
+    pointer-events: unset;
+}
+.reviews {
+
+    &__list {
+        min-height: 280px;
+        position: relative;
+    }
+
+    &__slide {
+        position: absolute;
+    }
 }
